@@ -535,6 +535,9 @@ color: #212121;
     background-size: containt;
 }
 .check-box:checked + .checkmark {
+    transition: background-image 250ms var(--cubic-bezier);
+}
+.check-box:focus:checked + .checkmark {
     background-image: url(../images/check-on.svg);
     background-repeat: no-repeat;
     background-size: contain;
