@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body class="all-body">
+    <!--The head of the site-->
+
+
+    <header class="page-header">
+        <div class="container site-nav">
+            <nav class="site-nav">
+                <a href="/" class="logo-link">
+                    Web<span class="logo-accent">Studio</span>
+                </a>
+        
+                <ul class="site-list">
+                    <li class="site-element"><a class="site-link current" href="./index.html">Studio</a></li>
+                    <li class="site-element"><a class="site-link" href="./portfolio.html">Portfolio</a></li>
+                    <li class="site-element"><a class="site-link" href="/">Contacts</a></li>
+                </ul>
+        
+            </nav>
+                <ul class="auth-list">
+                    <li class="auth-element">
+                        <a class="auth-email" href="info@devstudio.com">
+                            <svg class="email-icon" width="16" height="12">
+                                <use href="./images/icons.svg#envelope-normal"></use>
+                            </svg> info@devstudio.com</a>
+                    </li>
+                    <li class="auth-element"><a class="auth-phone" href="380961111111"> 
+                        <svg class="email-icon" width="10" height="16">
+                            <use class="phone-icon" href="./images/icons.svg#vector"></use>
+                        </svg> 38 096 111 11 11</a>
+                    </li>
+        
+                </ul>
+        </div>
+            
+
+    </header>
+
+    
+    <main class="main-div">
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                
+                <button  type="button" data-modal-close class="data-close-modal">
+                    <svg class="modal-icon" width="11" height="11">
+                        <use href="./images/icons.svg#close"></use>
+                    </svg>
+                </button>           
+                                    <div class="modal-content"></div>
+                                    <form class="js-speaker-form" autocomplete="off">
+
+                                        <legend class="form-title">Leave your information and we'll call you back</legend>
+                    
+                                        <p class="form-field">
+                                            <label class="form-label" for="name">Name</label>
+                                            <input class="form-text" id="name" type="text" name="username">
+                                            <svg class="input-icon" width="12" height="12">
+                                                <use href="./images/icons.svg#user"></use>
+                                            </svg>
+                                        </p>
+                    
+                                        <p class="form-field">
+                                            <label class="form-label" for="tel">Telephone</label>
+                                            <input class="form-text" type="tel" name="tel" id="tel">
+                                            <svg class="input-icon" width="12" height="12">
+                                                <use href="./images/icons.svg#tel"></use>
+                                            </svg>
+                                        </p>
+                    
+                                        <p class="form-field">
+                                            <label class="form-label" for="mail">E-mail</label>
+                                            <input class="form-text" type="email" name="email" id="mail">
+                                            <svg class="input-icon" width="12" height="12">
+                                                <use href="./images/icons.svg#email"></use>
+                                            </svg>
+                                        </p>
+                                        
+                                        <p class="form-field">
+                                            <label class="form-label" for="comment">Comments</label>
+                                            <textarea class="form-comment" name="comment" id="comment" rows="6" columns="5" placeholder="Enter the text"></textarea>
+                                        </p>
+                                            <label class="check-label">
+                                            <input class="check-box" type="checkbox" 
+                                            name="declar">
+                                            <span class="checkmark"></span>
+                                            I agree with the newsletter and accept the 
+                                            <a class="check-policy" href="">Terms and Conditions</a>
+                                        </label>
+                                        
+                                        <div class="submit-wrap">
+                                        <button class="form-button" type="submit">Send</button>
+                                        </div>
+                                    </form>
+
+                </div>
+            </div>
+        </div>
+        <!--Hero-->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title" data-aos="fade-up">Effective solutions </br> for our business</h1>
+                <button type="button" class="hero-button" data-modal-open>Request our services</button>
+            </div>
+        </section>
+
+
+
+        <!--Навыки-->
+        <section class="features">
+            <div class="container">
+                    <ul class="features-list">
+                        <li class="features-element">
+                            <div class="features-box">
+                                <svg class="features-icon" width="70" height="70">
+                                    <use href="./images/icons.svg#featuresa"></use>
+                                </svg>
+                            </div>
+                            
+                                    <h3 class="features-title">Attention to details</h3>
+                                    <p class="features-p">We go into all the details and processes </br> of your business to develop a </br> customized solution.</p>
+                            
+                        </li>
+                        <li class="features-element">
+                            <div class="features-box">
+                                <svg class="features-icon" width="70" height="70">
+                                    <use href="./images/icons.svg#featuresb"></use>
+                                </svg>
+                            </div>
+                            <div class="title-box">
+                                            <h3 class="features-title">Punctuality</h3>
+                                <p class="features-p">With us, you can feel safe and secure. </br> An important principle of the company: </br> respect your time and respect the </br> agreed deadlines.</p>
+                            </div>
+                        </li>
+                        <li class="features-element">
+                            <div class="features-box">
+                                <svg class="features-icon" width="70" height="70">
+                                    <use href="./images/icons.svg#featuresc"></use>
+                                </svg>
+                            </div>
+                            <div class="title-box">
+                                <h3 class="features-title">Planning</h3>
+                                <p class="features-p">You will be able to observe and </br> participate in every phase of solution </br> development and implementation.</p>
+                            </div>
+                        </li>
+                        <li class="features-element">
+                            <div class="features-box">
+                                <svg class="features-icon" width="70" height="70">
+                                    <use href="./images/icons.svg#featuresd"></use>
+                                </svg>
+                            </div>
+                            <div class="title-box">
+                                <h3 class="features-title">Modern technology</h3>
+                                <p class="features-p">We use innovative tools to solve </br> assigned tasks. It's time to simplify work processes.</p>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+        </section>
+        <!--Чем мы занимаемся-->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">What we do</h2>
+                    <ul class="section-list">
+                        <li class="section-element">
+                            <div class="section-thumb">
+                                <a class="section-img" href="">
+                                    <img class="section-img" src="images/1left.jpg" alt="ноутбук" width="370">
+                                    <div class="section-color">
+                                        <div class="section-actions">
+                                            <p class="actions-title">Desktop apps</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="section-element">
+                            <div class="section-thumb">
+                                <a class="section-img" href="">
+                                    <img class="section-img" src="images/phone.jpg" alt="телефон" width="370">
+                                        <div class="section-actions">
+                                            
+                                            <p class="actions-title">Mobile apps</p>
+                                        </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="section-element">
+                            <div class="section-thumb">
+                                <a class="section-img" href="">
+                                    <img class="section-img" src="images/notepad.jpg" alt="планшет" width="370">
+                                        <div class="section-actions">
+                                            <p class="actions-title">Design solutions</p>
+                                        </div>
+                                </a>
+                            </div>       
+                        </li>
+                    </ul>
+            </div>
+        </section>
+        <!--Наша команда-->
+        <section class="command">
+            <div class="container">
+                <h2 class="command-title" data-aos="fade-up">Our team</h2>
+                    <ul class="command-list">
+                        <li class="command-element link">
+                            <a class="command-link" href="">
+                                <div class="command-frame">
+                                    <img class="command-img" src="images/person1.jpg" alt="Игор Демьяненко" width="270" />
+                                    <div class="command-box">
+                                        <h3 class="command-worker link">Christophet Walker</h3>
+                                        <p class="command-p">Product designer</p>
+                                    </div>
+                                            <ul class="networks-list list">
+                                                <li>
+                                                    <a class="networks-link" href="/">
+                                                        <svg class="networks-icon" width="20" height="20">
+                                                            <use href="./images/icons.svg#instagram"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="networks-link" href="/">
+                                                        <svg class="networks-icon" width="20" height="20">
+                                                            <use href="./images/icons.svg#twitter"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="networks-link" href="/">
+                                                        <svg class="networks-icon" width="20" height="20">
+                                                            <use href="./images/icons.svg#facebook"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="networks-link" href="/">
+                                                        <svg class="networks-icon" width="20" height="20">
+                                                            <use href="./images/icons.svg#linkedin"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="command-element">
+                            <a class="command-link" href="">
+                                <div class="command-frame">
+                                    <img class="command-img" src="images/person2.jpg" alt="Ольга Репина" width="270" />
+                                    <div class="command-box">
+                                        <h3 class="command-worker">Kylie Evans</h3>
+                                        <p class="command-p">Frontend developer</p>
+                                    </div>   
+                                    <ul class="networks-list list">
+                                        <li>
+                                            <a class="networks-link" href="/">
+                                                <svg class="networks-icon" width="20" height="20">
+                                                    <use href="./images/icons.svg#instagram"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>     
+                                            <a class="networks-link" href="/">
+                                                <svg class="networks-icon" width="20" height="20">
+                                                        <use href="./images/icons.svg#twitter"></use>
+                                                </svg>
+                                            </a>                                     
+                                        </li>
+                                        <li>                                     
+                                            <a class="networks-link" href="/">
+                                                <svg class="networks-icon" width="20" height="20">
+                                                        <use href="./images/icons.svg#facebook"></use>
+                                                </svg>
+                                            </a>                                            
+                                        </li>
+                                        <li>                                         
+                                            <a class="networks-link" href="/">
+                                                <svg class="networks-icon" width="20" height="20">
+                                                        <use href="./images/icons.svg#linkedin"></use>
+                                                </svg>
+                                            </a>                                     
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="command-element">
+                            <a class="command-link" href="">
+                                <div class="command-frame">
+                                    <img class="command-img" src="images/person3.jpg" alt="Николай Тарасов" width="270" />
+                                    <div class="command-box">
+                                        <h3 class="command-worker">Ryan Harris</h3>
+                                        <p class="command-p">Marketing</p>
+                                    </div>
+                                        <ul class="networks-list list">
+                                            <li>
+                                                <a class="networks-link" href="/">
+                                                    <svg class="networks-icon" width="20" height="20">
+                                                        <use href="./images/icons.svg#instagram"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="networks-link" href="/">
+                                                    <svg class="networks-icon" width="20" height="20">
+                                                        <use href="./images/icons.svg#twitter"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="networks-link" href="/">
+                                                    <svg class="networks-icon" width="20" height="20">
+                                                        <use href="./images/icons.svg#facebook"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="networks-link" href="/">
+                                                    <svg class="networks-icon" width="20" height="20">
+                                                        <use href="./images/icons.svg#linkedin"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="command-element">
+                            <a class="command-link" href="">
+                                <div class="command-frame">
+                                    <img class="command-img" src="images/person4.jpg" alt="Михаил Ермаков" width="270" />
+                                    <div class="command-box">
+                                        <h3 class="command-worker">Tyler Moore</h3>
+                                        <p class="command-p">UI designer</p>
+                                    </div>
+                                    <ul class="networks-list list">
+                                        <li>
+                                            <a class="networks-link" href="/">
+                                                <svg class="networks-icon" width="20" height="20">
+                                                    <use href="./images/icons.svg#instagram"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="networks-link" href="/">
+                                                <svg class="networks-icon" width="20" height="20">
+                                                    <use href="./images/icons.svg#twitter"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="networks-link" href="/">
+                                                <svg class="networks-icon" width="20" height="20">
+                                                    <use href="./images/icons.svg#facebook"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="networks-link" href="/">
+                                                <svg class="networks-icon" width="20" height="20">
+                                                    <use href="./images/icons.svg#linkedin"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+            </div>
+        </section>
+        <section class="clients">
+            <h2 class="clients-title" data-aos="fade-up">
+                Regular customers
+            </h2>
+            <ul class="clients-list list">
+                <li class="clients-element icon-acompany norm">
+                    <a class="clients-link" href="/">
+                        <svg class="clients-icon" width="106" height="60">
+                            <use href="./images/icons.svg#acompany"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="clients-element icon-bcompany norm">
+                    <a class="clients-link" href="/">
+                        <svg class="clients-icon" width="106" height="60">
+                            <use href="./images/icons.svg#bcompany"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="clients-element icon-ccompany norm">
+                    <a class="clients-link" href="/">
+                        <svg class="clients-icon" width="106" height="60">
+                            <use href="./images/icons.svg#ccompany"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="clients-element icon-dcompany norm">
+                    <a class="clients-link" href="/">
+                        <svg class="clients-icon" width="106" height="60">
+                            <use href="./images/icons.svg#dcompany"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="clients-element icon-ecompany norm">
+                    <a class="clients-link" href="/">
+                        <svg class="clients-icon" width="106" height="60">
+                            <use href="./images/icons.svg#ecompany"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="clients-element icon-gcompany norm">
+                    <a class="clients-link" href="/">
+                        <svg class="clients-icon" width="106" height="60">
+                            <use href="./images/icons.svg#gcompany"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-all">
+                <div class="footer-info">
+                    <a href="/" class="footer-logo">
+                        Web<span class="footer-accent">Studio</span>
+                    </a>
+                    <address class="adress">
+                        <ul class="adress-list">
+                            <li>
+                                <a class="adress-location" href="https://www.figma.com/exit?url=https%3A%2F%2Fbit.ly%2F3pXMvUd"
+                                target="_blank" rel="noopener noreferrer">695 Park Ave, New York, NY 10065, </br>United States</a>
+                            </li>
+                            <li>
+                                <a class="adress-email" href="info@example.com">info@example.com</a>
+                            </li>
+                            <li>
+                                <a class="adress-phone" href="380991111111">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer-box">
+                    <p class="footer-title">
+                        Find us on
+                    </p>
+                        <ul class="footer-list list">
+                            <li class="footer-element">
+                                <a class="footer-link" href="/">
+                                    <svg class="footer-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-element">
+                                <a class="footer-link" href="/">
+                                    <svg class="footer-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-element">
+                                <a class="footer-link" href="/">
+                                    <svg class="footer-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-element">
+                                <a class="footer-link" href="/">
+                                    <svg class="footer-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="footer-box">
+                            <p class="input-label" for="footer-email">Subscribe to our newsletter</label>
+                            
+                            <form footer-form>
+                            <input class="input-email" id="footer-email" type="email" name="email" placeholder="E-mail">                    
+                            <button class="footer-button" type="submit">Subscribe</button>
+                            </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+           
+    <script>
+    (() => {
+        const refs = {
+            openModalBtn: document.querySelector("[data-modal-open]"),
+            closeModalBtn: document.querySelector("[data-modal-close]"),
+            modal: document.querySelector("[data-modal]"),
+        };
+
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+
+        function toggleModal() {
+            refs.modal.classList.toggle("is-hidden");
+        }
+    })();
+    </script>
+    <script>
+        console.log(document.querySelector(".page-header")
+        .getBoundingClientRect().height);
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
