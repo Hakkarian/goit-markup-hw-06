@@ -412,7 +412,7 @@ p, ul {
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -449,7 +449,7 @@ color: #212121;
     margin-bottom: 4px;
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
 
     letter-spacing: 0.01em;
     color: #757575;
@@ -461,6 +461,7 @@ color: #212121;
     
     border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
+        transition: outline 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
 }
 .input-icon {
     position: absolute;
@@ -482,6 +483,7 @@ color: #212121;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
+    transition: outline 250ms var(--cubic-bezier);
 }
 .form-comment::placeholder {
     padding-top: 12px;
@@ -497,11 +499,7 @@ color: #212121;
     align-items: baseline;
     margin-bottom: 20px;
 }
-.form-check input[type="checkbox"]{
-width: 16px;
-height: 15px;
-border: 1px solid var(--section-title);
-}
+
 
 .check-label {
 
@@ -514,7 +512,7 @@ border: 1px solid var(--section-title);
     user-select: none;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
 
     letter-spacing: 0.03em;
 
@@ -783,7 +781,7 @@ background-size: containt;
     
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -1125,10 +1123,12 @@ display: flex;
 }
 
 .input-title {
-
-}
-.input-label {
     margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 .input-email {
     width: 350px;
@@ -1147,7 +1147,7 @@ display: flex;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
@@ -1275,7 +1275,7 @@ rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
     font-weight: 400;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 1.55;
     letter-spacing: 0.03em;
     padding: 35px;
     background-color: var(--before-color);
