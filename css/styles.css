@@ -392,6 +392,7 @@ p, ul {
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: transparent;
+    transition: background-color 250ms var(--cubic-bezier), color 250ms var(--cubic-bezier);
 }
 .modal-icon {
     fill: currentColor;
